@@ -1,0 +1,135 @@
+:root {
+    --color-primary: rgb(255, 255, 255);
+    --color-secondary: transition;
+}
+body {
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+/* SideBar */
+aside.side-bar-wrap {
+    --radius-size: 25px;
+    height: 98vh;
+    position: fixed;
+    top: 5vh;
+    left: 0.5vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: var(--radius-size);
+    padding-right: 2px;
+    z-index: 100;
+}
+aside.side-bar-wrap::-webkit-scrollbar {
+    width: 10px;
+    z-index: 100;
+}
+
+aside.side-bar-wrap:hover{
+    width: 5%;
+    z-index: 100;
+}
+
+nav.side-bar ul {
+    padding: 0;
+    margin: calc(2 * var(--radius-size)) 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+nav.side-bar ul li {
+    height: 40px;
+    padding: 10px var(--radius-size);
+    list-style: none;
+    border-radius: var(--radius-size);
+    margin-bottom: var(--radius-size);
+    z-index: 100;
+}
+
+
+
+.side-bar ul .active a{
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    
+    
+}
+.side-bar ul .active{
+    background-color: rgba(255, 255, 255, 0.148);
+    z-index: 100
+}
+
+nav.side-bar ul li a{ 
+    font-size: 16pt;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.01s;
+    z-index: 100;
+}
+
+nav.side-bar ul li a:hover{
+    font-size: 20pt;
+    transition: 0.0001s;
+    z-index: 100;
+}
+
+
+    .side-bar ul li a{
+    color: rgba(255, 255, 255, 0.496);
+    transition: 0.0001s;
+    font-size: 15px;
+    z-index: 100;
+    }
+    
+    .side-bar ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.0001s;
+    font-style: 25px;
+    z-index: 100;
+    }
+
+
+nav.side-bar ul li:hover{
+    margin-left: 20px;
+    transition: 0.01s;
+    z-index: 100;
+}
+
+aside:hover nav.side-bar ul li a{
+    gap: 10px;
+    z-index: 100;
+}
+
+nav.side-bar ul li a span {
+    display: flex;
+    transition: 0.75s cubic-bezier(0.39, 0.58, 0.57, 1);
+    z-index: 100;
+}
+
+nav.side-bar ul li a span.title {
+    max-width: 0;
+    opacity: 0;
+    z-index: 100;
+    font-size: 16pt;
+}
+
+aside:hover nav.side-bar ul li a span.title {
+    width: auto;
+    max-width: 10rem;
+    opacity: 10;
+    z-index: 100;
+}
+
+nav ul li{
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+
+
+.side-bar{
+    margin-left: -15px;
+}
